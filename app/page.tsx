@@ -13,5 +13,5 @@ export default async function Home() {
     },
   });
 
-  return <> {data.allPeople.people.map((character) => character.name)}</>;
+  return <Listing listingData={data?.allPeople.people} />;
 }
