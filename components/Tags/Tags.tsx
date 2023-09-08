@@ -1,6 +1,6 @@
 import classes from "./tags.module.css";
 interface TagsProps {
-  tagData: { label: string; value: string | number }[];
+  tagData: { label: string; value: string | null | undefined }[];
 }
 
 const Tags: React.FC<TagsProps> = ({ tagData }) => {

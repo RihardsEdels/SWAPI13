@@ -6,9 +6,10 @@ import { mdiClose } from "@mdi/js";
 
 import classes from "./listing.module.css";
 import ListingCard from "../ListingCard/ListingCard";
+import { Person } from "@/types/types";
 
 interface ListingProps {
-  listingData: { name: string }[];
+  listingData: Person[];
 }
 
 const Listing: React.FunctionComponent<ListingProps> = ({ listingData }) => {
