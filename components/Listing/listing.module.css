@@ -12,12 +12,15 @@
 }
 
 .input {
-  @apply border-0
-    outline-none
-    px-3
-    py-1
-    rounded-md
-    w-full;
+  @apply outline-none
+  px-3
+  py-1
+  border-2
+  text-gray-dark
+  border-gray-border
+  focus:border-gray-dark
+  w-full
+  rounded-md;
 }
 
 .characterGrid {
