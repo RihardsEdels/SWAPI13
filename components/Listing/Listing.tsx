@@ -56,7 +56,7 @@ const Listing: React.FunctionComponent<ListingProps> = ({ listingData }) => {
         <Input
           onChange={handleClientSearch}
           value={searchQuery}
-          placeholder={"Search"}
+          placeholder={"Search name or homeworld"}
           icon={searchQuery && mdiClose}
           action={() => setSearchQuery("")}
           classes={{ root: classes.inputRoot, inputRoot: classes.input }}
@@ -68,7 +68,7 @@ const Listing: React.FunctionComponent<ListingProps> = ({ listingData }) => {
           {sortOrder && (
             <Icon
               size={"16px"}
-              path={sortOrder === "asc" ? mdiArrowUp : mdiArrowDown}
+              path={sortOrder === "desc" ? mdiArrowUp : mdiArrowDown}
             />
           )}
         </div>
