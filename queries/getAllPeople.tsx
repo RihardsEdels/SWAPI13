@@ -5,6 +5,25 @@ export const GET_ALL_PEOPLE = gql`
     allPeople {
       people {
         name
+        created
+        birthYear
+        height
+        species {
+          name
+        }
+        homeworld {
+          name
+        }
+        filmConnection {
+          films {
+            title
+          }
+        }
+        starshipConnection {
+          starships {
+            name
+          }
+        }
       }
     }
   }

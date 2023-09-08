@@ -19,7 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="container mx-5 lg:mx-[200px] ">{children}</main>
+        <Header />
+        <main className="container mx-auto px-5">{children}</main>
       </body>
     </html>
   );

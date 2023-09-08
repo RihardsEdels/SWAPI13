@@ -1,0 +1,12 @@
+.root {
+  @apply w-full bg-gray-dark
+  text-gray-light
+  text-lg
+  font-bold
+  lg:text-lg
+      py-5;
+}
+
+.headerContainer {
+  @apply container mx-auto px-5 grid grid-flow-col gap-4 justify-start;
+}

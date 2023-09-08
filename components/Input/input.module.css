@@ -1,0 +1,11 @@
+.root {
+  @apply relative max-w-min;
+}
+
+.inputRoot {
+  @apply outline-none px-3 py-1 border-gray-dark;
+}
+
+.icon {
+  @apply absolute right-2  top-[5px];
+}
