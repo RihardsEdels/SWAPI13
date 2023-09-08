@@ -2,7 +2,19 @@ import { mdiClose } from "@mdi/js";
 import Icon from "@mdi/react";
 import defaultClasses from "./input.module.css";
 import { mergeClasses } from "@/util/mergeClasses";
-interface InputProps {}
+interface InputProps {
+  icon: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  action: () => void;
+  classes?: {
+    root?: string;
+    inputRoot?: string;
+    icon?: string;
+  };
+  size?: number;
+  value?: string;
+  placeholder?: string;
+}
 
 const Input: React.FC<InputProps> = ({ icon, onChange, action, ...props }) => {
   const classes = mergeClasses(defaultClasses, props.classes);

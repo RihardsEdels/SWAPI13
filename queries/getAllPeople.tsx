@@ -4,6 +4,7 @@ export const GET_ALL_PEOPLE = gql`
   query getAllPeople {
     allPeople {
       people {
+        id
         name
         created
         birthYear

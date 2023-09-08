@@ -1,0 +1,52 @@
+.root {
+  @apply py-5;
+}
+
+.personDetails {
+  @apply grid
+    lg:grid-cols-2
+    lg:mb-10;
+}
+
+.name {
+  @apply py-5
+    text-2xl
+    font-bold
+    text-gray-dark
+    lg:text-4xl;
+}
+
+.tabListingContainer {
+  @apply py-2
+    pl-5;
+}
+
+.tabListingHeading {
+  @apply text-lg
+    border-b
+    font-semibold;
+}
+
+.tabListingItem {
+  @apply grid
+    gap-1
+    grid-flow-col
+    justify-between
+    lg:grid-cols-3;
+}
+
+.statsContainer {
+  @apply text-base
+    py-2
+    border-b
+    mb-5
+    lg:border-0;
+}
+
+.statsItem {
+  @apply grid
+    grid-flow-col
+    grid-cols-2
+    lg:flex
+    lg:gap-2;
+}

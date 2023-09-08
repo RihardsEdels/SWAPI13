@@ -1,0 +1,29 @@
+.activeTab {
+  @apply py-[2px]
+    bg-green
+    hover:bg-[#0d8567]
+    border
+    border-green
+    active:text-gray-light
+    px-2
+    text-gray-light
+    rounded-sm;
+}
+
+.tab {
+  @apply py-[2px]
+    bg-gray-light
+    border
+    border-gray-border
+    hover:bg-green
+    active:text-gray-light
+    px-2
+    text-gray-dark
+    hover:text-gray-light
+    rounded-sm;
+}
+
+.tabContent {
+  @apply py-5
+    lg:p-5;
+}

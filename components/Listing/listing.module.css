@@ -1,19 +1,35 @@
 .root {
-  @apply py-5 grid gap-3;
+  @apply py-5
+    grid
+    gap-3;
 }
 
 .inputRoot {
-  @apply relative max-w-full lg:max-w-max border-gray-dark;
+  @apply relative
+    max-w-full
+    lg:max-w-max
+    border-gray-dark;
 }
 
 .input {
-  @apply border-0 outline-none px-3 py-1 rounded-md w-full;
+  @apply border-0
+    outline-none
+    px-3
+    py-1
+    rounded-md
+    w-full;
 }
 
 .characterGrid {
-  @apply grid gap-2 md:grid-cols-2 md:gap-3 lg:grid-cols-2 lg:gap-4;
+  @apply grid
+    gap-2
+    md:grid-cols-2
+    md:gap-3
+    lg:grid-cols-3
+    lg:gap-4;
 }
 
 .noResults {
-  @apply text-white self-center;
+  @apply text-gray-dark
+    self-center;
 }
