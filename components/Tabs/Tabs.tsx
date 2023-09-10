@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 import Button from "../Button/Button";
 
 import classes from "./tabs.module.css";
@@ -14,11 +14,12 @@ const Tabs: React.FC<TabsProps> = ({ tabs }) => {
     type: tabs[0]?.value || "",
   });
 
-  const handleTabs = (e) => {
+  const handleTabs = (e: React.MouseEvent<HTMLElement>) => {
+    const element = e.target as HTMLElement;
     setDropdown((prevState) => ({
       ...prevState,
-      open: e.target.id === prevState.type ? !prevState.open : true,
-      type: e.target.id,
+      open: element.id === prevState.type ? !prevState.open : true,
+      type: element.id,
     }));
   };
   const content = tabs.find((tab) => tab.value === dropdown?.type)?.content;
