@@ -14,7 +14,10 @@ interface ListingCardProps {
 const ListingCard: React.FC<ListingCardProps> = ({ characterData }) => {
   const { id, name, homeworld, birthYear, created, height, species } =
     characterData;
-  const cardDate = format(new Date(created), "MMMM do yyyy");
+
+  if (!id) return null;
+
+  const cardDate = created && format(new Date(created), "MMMM do yyyy");
 
   const statsData = [
     { label: "Birth year:", value: birthYear === "unknown" ? null : birthYear },
