@@ -79,13 +79,7 @@ export default async function Character({ params }: PageProps) {
     { label: "Birth year:", value: birthYear === "unknown" ? null : birthYear },
     { label: "Gender:", value: gender || "-" },
     { label: "Hair color:", value: hairColor || "-" },
-
-    {
-      label: "Homeworld:",
-      value: homeworld?.name === "unknown" ? null : homeworld?.name,
-    },
     { label: "Height:", value: height },
-    { label: "Species:", value: species?.name || "Human" },
   ];
 
   return (
@@ -108,6 +102,30 @@ export default async function Character({ params }: PageProps) {
                   <span>{s.value}</span>
                 </div>
               ))}
+
+              <div className={classes.extraInfo}>Homeworld</div>
+              <div className={classes.statsItem}>
+                <span>Name:</span>
+                <span>{homeworld?.name || "-"}</span>
+              </div>
+              <div className={classes.statsItem}>
+                <span>Population:</span>
+                <span>{homeworld?.population || "-"}</span>
+              </div>
+              <div className={classes.statsItem}>
+                <span>Orbital period:</span>
+                <span>{homeworld?.orbitalPeriod || "-"}</span>
+              </div>
+
+              <div className={classes.extraInfo}>Species</div>
+              <div className={classes.statsItem}>
+                <span>Name:</span>
+                <span>{species?.name || "Human"}</span>
+              </div>
+              <div className={classes.statsItem}>
+                <span>Classification:</span>
+                <span>{species?.classification || "-"}</span>
+              </div>
             </div>
           </div>
         </div>

@@ -50,3 +50,10 @@
     lg:flex
     lg:gap-2;
 }
+
+.extraInfo {
+  @apply mt-5
+    border-b
+    font-bold
+    lg:border-0;
+}
