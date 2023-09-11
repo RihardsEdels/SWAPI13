@@ -11,9 +11,7 @@ const Tags: React.FC<TagsProps> = ({ tagData }) => {
           <span key={idx} className={classes.tag}>
             {tag.value}
           </span>
-        ) : (
-          ""
-        )
+        ) : null
       )}
     </div>
   );
