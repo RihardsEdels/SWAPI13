@@ -1,6 +1,7 @@
 export type Person = {
     homeworld?: {
         name: string;
+        orbitalPeriod?: string
         population?: string
     };
     filmConnection?: {
@@ -20,7 +21,6 @@ export type Person = {
     height?: string;
     species?: {
         name: string;
-        orbitalPeriod?: string
         classification?: string
 
     };
